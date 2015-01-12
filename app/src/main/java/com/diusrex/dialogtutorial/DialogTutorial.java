@@ -18,6 +18,11 @@ public class DialogTutorial extends Activity {
         showDialogFragment(fragment);
     }
 
+    public void displayOnCreateDialogFragment(View v) {
+        OnCreateDialogFragment fragment = OnCreateDialogFragment.newInstance("Message");
+        showDialogFragment(fragment);
+    }
+
     private void showDialogFragment(DialogFragment fragment) {
         fragment.show(getFragmentManager(), "dialog");
     }

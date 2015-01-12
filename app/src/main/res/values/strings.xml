@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Dialog Tutorial</string>
     <string name="create_view_dialog_example">Using OnCreateView</string>
+    <string name="create_dialog_example">Using OnCreateDialog</string>
 </resources>
