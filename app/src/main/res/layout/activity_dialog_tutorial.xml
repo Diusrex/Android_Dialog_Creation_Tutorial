@@ -30,4 +30,24 @@
         android:layout_height="wrap_content"
         android:onClick="displayBareAlertDialog"
         />
+
+    <Button
+        android:text="@string/display_dialog_and_view_as_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="displayOnCreateDialogAndViewAsDialog"
+        />
+
+    <Button
+        android:text="@string/display_dialog_and_view_as_embedded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="displayOnCreateDialogAndViewAsEmbedded"
+        />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>

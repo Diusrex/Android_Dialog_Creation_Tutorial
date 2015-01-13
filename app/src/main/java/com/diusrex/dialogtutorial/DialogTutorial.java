@@ -3,6 +3,8 @@ package com.diusrex.dialogtutorial;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DialogFragment;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
@@ -47,7 +49,23 @@ public class DialogTutorial extends Activity {
         dialog.show();
     }
 
+    public void displayOnCreateDialogAndViewAsDialog(View v) {
+        OnCreateDialogAndViewDialogFragment fragment = OnCreateDialogAndViewDialogFragment.newInstance("DialogAndView as dialog");
+        showDialogFragment(fragment);
+    }
+
+    public void displayOnCreateDialogAndViewAsEmbedded(View v) {
+        Fragment fragment = OnCreateDialogAndViewDialogFragment.newInstance("DialogAndView embedded");
+        embedFragmentInFrame(fragment);
+    }
+
     private void showDialogFragment(DialogFragment fragment) {
         fragment.show(getFragmentManager(), "dialog");
+    }
+
+    private void embedFragmentInFrame(Fragment fragment) {
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.add(R.id.frame, fragment);
+        ft.commit();
     }
 }
