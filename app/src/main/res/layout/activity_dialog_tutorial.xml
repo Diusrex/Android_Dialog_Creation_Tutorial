@@ -18,6 +18,13 @@
         />
 
     <Button
+        android:text="@string/create_view_dialog_embedded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="displayOnCreateViewDialogFragmentEmbedded"
+        />
+
+    <Button
         android:text="@string/create_dialog_example"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -22,6 +22,11 @@ public class DialogTutorial extends Activity {
         showDialogFragment(fragment);
     }
 
+    public void displayOnCreateViewDialogFragmentEmbedded(View v) {
+        OnCreateViewDialogFragment fragment = OnCreateViewDialogFragment.newInstance("On Create View DialogFragment");
+        embedFragmentInFrame(fragment);
+    }
+
     public void displayOnCreateDialogFragment(View v) {
         OnCreateDialogFragment fragment = OnCreateDialogFragment.newInstance("Message");
         showDialogFragment(fragment);

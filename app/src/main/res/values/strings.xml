@@ -6,4 +6,5 @@
     <string name="display_bare_alert_dialog">Display Bare AlertDialog</string>
     <string name="display_dialog_and_view_as_dialog">Show OnCreateDialogAndView as Dialog</string>
     <string name="display_dialog_and_view_as_embedded">Show OnCreateDialogAndView embedded</string>
+    <string name="create_view_dialog_embedded">Show OnCreateView Embedded</string>
 </resources>

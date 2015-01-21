@@ -48,6 +48,7 @@ public class OnCreateViewDialogFragment extends DialogFragment {
         });
 
         // Adding a title
+        // WILL CAUSE AN EXCEPTION IF THE APP IS EMBEDDED
         //getDialog().setTitle("Title");
 
         return view;
